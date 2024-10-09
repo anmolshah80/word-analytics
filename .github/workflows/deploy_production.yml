@@ -42,7 +42,7 @@ jobs:
   deploy-app:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outpus.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     needs: build-app
     runs-on: ubuntu-latest
     steps:
